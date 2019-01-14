@@ -33,6 +33,6 @@
   "dependencies": {
     "d3": "3.5.17",
     "react-native-svg": "^5.1.8",
-    "react-native-vector-icons": "^6.1.0"
+    "react-native-svg-icon": "^0.8.1"s
   }
 }
