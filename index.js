@@ -85,8 +85,8 @@ export default class AwesomeHierarchyGraph extends Component {
           <ScrollView>
             <ScrollView horizontal>
               <Svg width={hierarchyWidth} height={height}>
-                {rectNodes}
                 {curves}
+                {rectNodes}
               </Svg>
             </ScrollView>
           </ScrollView>

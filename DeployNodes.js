@@ -5,18 +5,18 @@ import { G, Text, Rect, Circle } from 'react-native-svg'
 export function DeployNodes(nodes, nodeWitdh, rootY) {
   const rectNodes = _.map(nodes, function (n, index) {
     return (<G key={'tree_' + index}>
-      <Circle
-        r="4"
-        x={n.x}
-        y={n.y}
-        fill="#1AAC19"
-      />
       <Rect
         x={n.x}
         y={n.y}
         width={nodeWitdh}
         height={1}
-        stroke={rootY > n.y ? '#be4468' : '#ab68e3'}
+        stroke={rootY == n.y ? '#888' : (rootY > n.y ? '#be4468' : '#ab68e3')}
+      />
+      <Circle
+        r="4"
+        x={n.x}
+        y={n.y}
+        fill="#1AAC19"
       />
       {n.name && <Text
         fontSize={10}
